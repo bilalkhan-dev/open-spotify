@@ -1,6 +1,6 @@
 @font-face {
     font-family: poppins;
-    src: url(../spotify-fonts/font-poppins/Poppins-Bold.ttf);
+    src: url(../font-poppins/Poppins-SemiBold.ttf);
 }
 
 *{
@@ -29,7 +29,7 @@ li{
 /*                            Whole Page                             */
 /*------------------------------------------------------------------*/
 .whole-page{
-    margin: 55px auto;
+    margin: 34px auto;
 
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ li{
 /*------------------------------------------------------------------*/
 .header-logo img{
     width: 25px;
+    margin-top: 20px;
 }
 
 header h1{
@@ -199,7 +200,7 @@ footer p{
     background: #121212;
 
     width: max-content;
-    padding: 30px 200px;
+    padding: 30px 225px;
     border-radius: 10px;
    }
 
