@@ -1,0 +1,21 @@
+{
+    "name": "Spotify",
+    "short_name": "Spotify",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#121212",
+    "background_color": "#121212",
+    "icons": [
+        {
+            "src": "icons/manifest-icons/Spotify_MWP_512.50dd387d.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/manifest-icons/Spotify_MWP_384.b98158a0.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
