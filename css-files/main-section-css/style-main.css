@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+
+/*                                Page Main                              */
+/*----------------------------------------------------------------------*/
+body{
+    background: black;
+}
+
+
+
+
+/*                            All sections                            */
+/*----------------------------------------------------------------------*/
+.identical-section{
+    color: #fff;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+/* Profile + title */
+.identical-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15.5px;
+}
+
+/* Artists profile container */
+.identical-profile-container
+{
+    display: flex;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    
+}
+
+/* artists section h 1 */
+.identical-container h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+
+    margin: 10px 0 5px 15.5px;
+}
+
+/* artists section images */
+.identical-container img{
+    width: 150px;
+
+    scroll-snap-align: center;
+
+    aspect-ratio: 16/15.8;
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+.identical-container img, .identical-container h2{
+    margin-left: 16px;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.identical-container h2{
+    margin-top: 11px;
+}
+
+/*     Large screen content styling    */
+/* section expanding link */
+.identical-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.identical-title a{
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 400;
+
+    display: none;
+
+    cursor: pointer;
+
+    margin-right: 15px;
+}
+
+
+/* Due to issu ??? */
+.lg-left-container{
+    display: none;
+}
+
+/*              Left Aside            */
+aside{
+    color: white;
+}
+
+.aside-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 15px;
+}
+
+.aside-title{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.aside-header h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.aside-header svg{
+    width: 23px;
+    fill: #b3b3a4;
+}
+
+.creat-play svg{
+    width: 30px;
+}
+
+/*         Aside Scrollable container                */
+.aside-scroll-cont div{
+    background: #1f1f1f;
+}
+
+
+/*                          Media Queries                       */
+/*-------------------------------------------------------------*/
+@media (min-width: 930px){
+    /*                   styling main for large screen                     */
+    #lg-container{
+        display: grid;
+        grid-template-columns: minmax(300px, 410px)
+        minmax(600px, 970px);
+        grid-template-rows: auto max-content;
+        gap: 9px;
+
+        position: fixed;
+        top: 75px;
+        left: 10px;
+        right: 10px;
+        bottom: 8px;
+
+        max-height: 90vh;
+    }
+
+    .lg-left-container{
+        background: #121212;
+        border-radius: 8px;
+        display: block;
+    }
+
+
+    .section-main{
+        overflow: auto;
+        max-height: 90vh;
+        background: #121212;
+
+        border-radius: 8px;
+    }
+
+
+    .section-main .premium-card{
+        display: none;
+    }
+
+    /*               Sections Images Div appreaing                   */
+    .identical-profile-container div{
+        display: none;
+    }
+    .identical-profile-container  :nth-child(1), .identical-profile-container :nth-child(2), .identical-profile-container :nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .identical-container img{
+        border-radius: 50%;
+
+        aspect-ratio: 8/8;
+        margin-left: 5vw;
+    }
+
+
+
+    /* all section */
+    .lg-right-container .identical-profile-container
+    {
+        overflow: hidden;
+    }
+
+    #expand-link-lg{
+        display: block;
+    }
+
+    
+
+}
+
+
+@media (min-width: 1290px){
+    /*               Sections Images Div appreaing                   */
+    .identical-profile-container :nth-child(4){
+        display: flex;
+    }
