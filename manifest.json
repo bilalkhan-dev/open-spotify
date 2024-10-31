@@ -8,7 +8,7 @@
     "background_color": "#121212",
     "icons": [
         {
-            "src": "icons/manifest-icons/Spotify_MWP_512.50dd387d.png",
+            "src": "icons/manifest-icons/manifest-logo-512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
