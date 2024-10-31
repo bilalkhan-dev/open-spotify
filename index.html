@@ -22,7 +22,7 @@
     </style> 
 
     <script>
-	    const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const image = entry.target;
@@ -41,6 +41,8 @@ images.forEach((image) => {
   observer.observe(image);
 });
     </script>
+
+    
 
 </head>
 <body style="background: #121212;">
