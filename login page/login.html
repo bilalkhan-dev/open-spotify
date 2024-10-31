@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicons -->
+    <link rel="icon" sizes="32x32" type="image/x-icon" href="../icons/favicon/icons8-spotify-32.ico" >
+    <link rel="icon" sizes="16x16" type="image/x-icon" href="../icons/favicon/icons8-spotify-16.ico" >
+
+    <!-- Link to Sylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login-Spotify</title>
+</head>
+<body role="application">
+
+    <div class="whole-page">
+        <!-- Section Header -->
+        <header>
+           <div class="header-logo">
+            <img src="../icons/bran-icon/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo">
+           </div>
+           <h1>Log in to Spotify</h1>
+        </header>
+
+        <!-- Section main -->
+        <main>
+            <!-- One Tap sign in -->
+            <section role="region" class="one-tap-section">
+                <ul>
+                    <li>
+                        <button title="sign in with google" type="button">
+                            <span>
+                                <img src="../icons/third-party-logos/google-logo.png" alt="apple Logo">
+                            </span>
+                            <span>
+                                Continue with Google
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button title="Sign In with Facebook" type="button">
+                            <span>
+                                <img src="../icons/third-party-logos/facebook-logo.png" alt="Facebook Logo">
+                            </span>
+                            <span>
+                                Continue with Facebook
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button title="Sign In with apple" type="button">
+                            <span>
+                                <img src="../icons/third-party-logos/apple-512.png" alt="Apple Logo">
+                            </span>
+                            <span>
+                                Continue with Apple
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <div class="opt-line"></div>
+
+            <!-- Manual sign in -->
+            <form action="" method="post">
+
+                <label for="username">Email or username</label>
+                <input type="text" id="username" value="" class="username" required autocapitalize="off" autocomplete="username" autofocus spellcheck="false" placeholder="Email or username" >
+
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" class="password" required autocapitalize="off"
+                autocomplete="current-password" spellcheck="false" placeholder="Password" >
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <div class="forget-links">
+                <div>
+                    <a href=""><span>Forget your password?</span></a>
+                </div>
+                <div>
+                    <span>Don't have an account?</span>
+                    <a href=""><span class="sign-up">Sign up for Spotify.</span></a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="optional-info">
+            <p>This site is protected by reCAPTCHA and the Google <a href=""><span>Privacy Policy</span></a>and <a href=""><span>Terms of Services</span></a>apply</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
