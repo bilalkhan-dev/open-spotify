@@ -1,0 +1,227 @@
+@font-face {
+    font-family: poppins;
+    src: url(../spotify-fonts/font-poppins/Poppins-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    /* font-family: poppins; */
+    color: white;
+}
+
+body{
+    background: #121212;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*                            Whole Page                             */
+/*------------------------------------------------------------------*/
+.whole-page{
+    margin: 55px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/*                        Section Header                             */
+/*------------------------------------------------------------------*/
+.header-logo img{
+    width: 25px;
+}
+
+header h1{
+    font-family: poppins;
+    font-size: 1.825rem;
+
+    margin-bottom: 30px;
+}
+
+
+/*                         Section Main                              */
+/*------------------------------------------------------------------*/
+main,form, .forget-links,header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* One Tap Section */
+.one-tap-section{
+    margin-top: -6px;
+}
+
+/* One tap Buttons */
+.one-tap-section button{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 12px 0;
+    margin: 8px 0;
+
+    cursor: pointer;
+}
+
+.one-tap-section img{
+    width: 1.4rem;
+    height: auto;
+    margin-left: 25px;
+}
+
+.one-tap-section span{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+
+    margin-left: -14px;
+}
+
+main, section, ul,li, button, form,input{
+    width: inherit;
+    padding: 0 7px;
+}
+
+/*    Straight line   */
+.opt-line{
+    width: 92%;
+    height: 0.2px;
+    background: rgba(255, 255, 255, 0.1);
+
+    margin: 40px 0;
+}
+
+form{
+    padding: 0 25px;
+}
+
+label{
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.07rem;
+    font-weight:700;
+}
+
+input:focus-visible{
+    border: 2.2px solid white;
+    outline: none;
+}
+
+
+
+input::placeholder{
+    font-size: 1.07rem;
+    /* padding-left: 10px; */
+}
+
+input,button{
+    margin-bottom: 40px;
+    padding: 16px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background: none;
+}
+
+input{
+    padding-left: 13px;
+    font-size: 1.07rem;
+}
+ 
+form button{
+    border-radius: 40px;
+    background: #3be477;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;;
+}
+
+.forget-links :nth-child(1){
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.forget-links :nth-child(1) span{
+    font-size: 1.16rem;
+}
+
+.forget-links :nth-child(2) > span{
+    font-weight: normal;
+    color: #b3b3b3;
+}
+
+main .forget-links .sign-up{
+    color: #fff;
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+
+/*                         Media Qureies                        */
+@media (min-width: 767px){
+   body{
+    background: #262626;
+   }
+
+   .whole-page{
+    background: #121212;
+
+    width: max-content;
+    padding: 30px 200px;
+    border-radius: 10px;
+   }
+
+   .header-logo img{
+    width: 35px;
+   }
+
+    main, section, ul,li, button, form,input{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+   }
+
+   input{
+    padding-left: 11px;
+   }
+
+   .opt-line{
+    width: 100%;
+   }
+
+   footer{
+    background: #121212;
+   }
+} 
