@@ -3,7 +3,7 @@
     "short_name": "Spotify",
     "start_url": "https://bilalkhan-dev.github.io/open.spotify/",
     "scope": "/",
-    "display": "standalone",
+    "display": "fullscreen",
     "theme_color": "#121212",
     "background_color": "#121212",
     "icons": [
